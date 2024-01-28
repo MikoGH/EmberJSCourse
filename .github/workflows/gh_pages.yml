@@ -18,10 +18,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Clean install dependencies
-        run: cd ./EmberApp & npm ci
+        run: cd ./EmberApp && npm ci
 
       - name: Build Application
-        run: cd ./EmberApp & npx ember build
+        run: cd ./EmberApp && npx ember build
 
       - name: Run deploy script
         run: sh ./EmberApp/scripts/gh_pages.sh
