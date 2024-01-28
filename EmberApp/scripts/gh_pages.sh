@@ -9,6 +9,7 @@ git config user.email "unyperm@gmail.com"
 echo "Start to deploy..."
 
 git checkout --orphan gh-pages
+cd ./EmberApp
 ls -l
 
 git --work-tree ./dist add --all
