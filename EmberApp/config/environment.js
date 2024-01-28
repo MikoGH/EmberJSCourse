@@ -49,7 +49,7 @@ module.exports = function(environment) {
 
   if (environment === 'ci') {
     // here you can enable a production-specific feature
-    ENV.rootURL = '/EmberJSCourse/EmberApp/';
+    ENV.rootURL = '/EmberJSCourse/';
   }
 
   return ENV;
