@@ -21,7 +21,7 @@ jobs:
         run: cd ./EmberApp && npm ci
 
       - name: Build Application
-        run: cd ./EmberApp && npx ember build --environment=production
+        run: cd ./EmberApp && npx ember build --environment=ci
 
       - name: Run deploy script
         run: sh ./EmberApp/scripts/gh_pages.sh
